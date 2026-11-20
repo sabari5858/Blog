@@ -1,0 +1,269 @@
+{
+ "profile": {
+  "name": "Sabarigirish Radhakrishnan",
+  "headline": "System & Product Validation Architect | Storage, PCIe/NVMe, Post-Silicon Validation, Platform Architecture | Bengaluru, India",
+  "about": "15+ years of experience in post-silicon validation, system-level product validation, platform bring-up, firmware integration, high-speed I/O validation and complex hardware/software debugging across x86-based compute and server architectures.\nStrong expertise in PCIe, NVMe, USB, CPU, memory, firmware, BIOS, Linux kernel, device drivers and storage subsystem integration. I translate architecture specifications, product requirements and customer use cases into validation strategies, workload-driven test plans, coverage models, risk-based execution strategies and production-readiness criteria.\nHands-on with PCIe and NVMe system integration, device enumeration and initialization, high-speed I/O debugging, storage performance investigation and cross-layer failure analysis spanning silicon, hardware, firmware, BIOS, drivers and operating systems.\nStrong Python automation background: scalable validation frameworks, regression infrastructure, execution dashboards, failure analytics and observability, delivering approximately 35% improvement in validation efficiency.\nExperienced in technical leadership, mentoring validation engineers and driving complex investigations to closure, with hands-on exposure to AI/LLM-based engineering productivity solutions including RAG systems.",
+  "gh": "YOUR_GITHUB_USERNAME",
+  "linkedin": "https://www.linkedin.com/in/YOUR-HANDLE",
+  "email": "",
+  "repo": "",
+  "resume": ""
+ },
+ "jobs": [
+  {
+   "r": "Senior Consultant",
+   "o": "Capgemini Technology",
+   "d": "05/2025 – Present",
+   "b": [
+    "Lead system-level validation of platform power-management features on Linux-based x86 systems, covering CPU, firmware, operating system and peripheral interactions.",
+    "Define and execute validation scenarios covering system initialization, runtime power transitions, suspend/resume, s2idle, deep-sleep and runtime power-management workflows.",
+    "Perform deep kernel-level debugging across scheduler, interrupts, device drivers, firmware and hardware interactions to isolate complex platform failures.",
+    "Analyze cross-layer interactions across CPU, BIOS, firmware, OS, PCIe and peripheral subsystems to identify failure origin and root cause.",
+    "Drive feature enablement, stabilization, failure reproduction, debugging and validation closure across complex power and I/O workflows.",
+    "Develop Python-based validation automation frameworks to improve test scalability, execution efficiency and debug reproducibility.",
+    "Collaborate with platform, firmware, kernel, hardware and system engineering teams to investigate failures and validate corrective actions.",
+    "Analyze system traces, logs, telemetry and debug information to identify functional, performance and stability issues."
+   ]
+  },
+  {
+   "r": "System Software Validation Engineer",
+   "o": "Intel Corporation",
+   "d": "05/2022 – 11/2024",
+   "b": [
+    "Owned SoC and platform-level post-silicon validation from silicon bring-up through feature stabilization and production readiness.",
+    "Developed and executed validation plans covering CPU, memory, PCIe, USB, NVMe, firmware, BIOS and OS interactions.",
+    "Translated architecture specifications, feature requirements, customer use cases and system requirements into executable validation scenarios and measurable coverage goals.",
+    "Debugged complex failures including CPU hangs, memory corruption, system stalls, PCIe enumeration failures, USB initialization issues and NVMe performance bottlenecks.",
+    "Conducted cross-layer debugging across silicon, firmware, BIOS, operating systems, device drivers and platform hardware.",
+    "Analyzed boot flows from reset through silicon initialization, BIOS, firmware and OS handoff to identify initialization and integration failures.",
+    "Used JTAG/ITP, WinDbg, trace analysis, oscilloscopes and logic analyzers for failure investigation and root-cause analysis.",
+    "Supported platform and silicon bring-up across multiple SoC generations: feature enablement, characterization, stabilization and production-readiness validation.",
+    "Provided validation feasibility inputs during architecture and design reviews on validation, observability and debug challenges.",
+    "Established structured approaches for failure reproduction, triage, root-cause analysis, workaround validation and defect closure.",
+    "Developed validation automation frameworks and regression infrastructure, improving validation efficiency by approximately 35%.",
+    "Built dashboards for execution tracking, coverage analysis, failure classification, triage and validation health monitoring.",
+    "Supported validation sign-off by consolidating results, open issues, risks, coverage status and stabilization data."
+   ]
+  },
+  {
+   "r": "Lead Product Engineer",
+   "o": "Harman Connected Services",
+   "d": "06/2021 – 05/2022",
+   "b": [
+    "Led system-level validation of complex embedded compute platforms involving multiple I/O and peripheral subsystems.",
+    "Defined validation scope, execution strategy, test priorities and workload-driven scenarios for platform features.",
+    "Performed system trace analysis to identify functional failures, performance bottlenecks and integration issues.",
+    "Developed end-to-end validation scenarios covering platform functionality, system workloads and complex I/O interactions.",
+    "Identified coverage gaps through workload and use-case analysis and drove improvements in validation completeness.",
+    "Mentored engineers in structured debugging, failure isolation, issue prioritization and technical investigation.",
+    "Collaborated with hardware, firmware, software and system teams to resolve complex validation issues."
+   ]
+  },
+  {
+   "r": "Validation Engineer",
+   "o": "UST Global",
+   "d": "12/2014 – 06/2021",
+   "b": [
+    "Performed system and platform validation across complex compute architectures and hardware/software environments.",
+    "Developed and executed functional, stress, stability, performance and system-level validation scenarios.",
+    "Supported platform bring-up, feature validation, failure reproduction, debugging and issue closure.",
+    "Performed hardware/software cross-layer debugging across processor, memory, I/O, firmware, OS and peripheral subsystems.",
+    "Investigated system hangs, boot failures, stability issues, performance degradation and device-level failures.",
+    "Used hardware debug and software diagnostic tools to collect evidence, isolate failures and identify root causes.",
+    "Collaborated with development teams to reproduce failures, validate fixes and close defects.",
+    "Contributed to validation planning, regression execution, failure triage and coverage improvement."
+   ]
+  },
+  {
+   "r": "Server Technical Support Engineer",
+   "o": "Nebula Computers",
+   "d": "02/2013 – 12/2014",
+   "b": [
+    "Supported server platforms through hardware diagnostics, OS troubleshooting, system configuration and failure analysis.",
+    "Investigated hardware, firmware, storage, networking and OS issues on server platforms.",
+    "Performed system-level troubleshooting and root-cause analysis of complex customer issues.",
+    "Supported server bring-up, configuration, diagnostics and production deployment."
+   ]
+  },
+  {
+   "r": "Desktop & Server Engineer",
+   "o": "Pooja Enterprises",
+   "d": "07/2011 – 02/2013",
+   "b": [
+    "Performed hardware and software troubleshooting for desktop and server platforms.",
+    "Diagnosed system, storage, networking, OS and hardware issues.",
+    "Supported system installation, configuration, validation and customer issue resolution."
+   ]
+  }
+ ],
+ "contributions": [
+  {
+   "k": "Validation Strategy & Architecture",
+   "b": [
+    "Defined end-to-end validation strategies spanning CPU, memory, I/O, firmware, operating systems, power management and system initialization.",
+    "Converted architecture requirements and customer use cases into scalable validation plans and executable test scenarios.",
+    "Established methodologies for functional, system-level, workload-based, stress, reliability and recovery validation.",
+    "Developed risk-based prioritization to focus resources on high-impact and high-risk areas.",
+    "Defined validation objectives, execution priorities, coverage expectations and readiness criteria."
+   ]
+  },
+  {
+   "k": "Storage & High-Speed I/O Validation",
+   "b": [
+    "Developed system-level validation coverage for PCIe and NVMe storage subsystem integration.",
+    "Investigated device enumeration, initialization, I/O subsystem integration and performance issues.",
+    "Analyzed interactions between storage devices, PCIe infrastructure, firmware, drivers and operating systems.",
+    "Applied system-level debugging to isolate hardware/software integration problems.",
+    "Built domain understanding of SSD architecture, NVMe workflows, NAND management and storage workload characteristics."
+   ]
+  },
+  {
+   "k": "Coverage, Execution & Sign-off",
+   "b": [
+    "Built coverage models and validation plans to track feature completeness and execution progress.",
+    "Established structured execution and triage processes to improve issue turnaround.",
+    "Defined exit criteria and readiness indicators for production-readiness activities.",
+    "Consolidated results, risks, open issues and coverage information to support technical sign-off.",
+    "Improved regression strategy and infrastructure to increase execution efficiency."
+   ]
+  },
+  {
+   "k": "Silicon Debug & Root-Cause Analysis",
+   "b": [
+    "Performed cross-layer RCA spanning silicon, board/platform hardware, firmware, BIOS, drivers, OS and applications.",
+    "Investigated boot failures, hangs, memory corruption, device initialization failures, performance and stability problems.",
+    "Used structured experiments and controlled reproductions to isolate failure signatures.",
+    "Validated workarounds and corrective actions through targeted regression and reproduction testing.",
+    "Correlated hardware traces, software logs, telemetry and debug information to accelerate failure isolation."
+   ]
+  },
+  {
+   "k": "Automation & Validation Infrastructure",
+   "b": [
+    "Developed Python automation frameworks and regression infrastructure improving validation efficiency by approximately 35%.",
+    "Built dashboards for execution, coverage, failure analysis, issue tracking and engineering visibility.",
+    "Automated repetitive validation and debug workflows to improve reproducibility and reduce manual effort.",
+    "Developed engineering productivity solutions using Python and modern software infrastructure.",
+    "Applied AI/LLM-based tools to improve technical investigation, information retrieval and engineering workflows."
+   ]
+  },
+  {
+   "k": "Team Leadership & Mentoring",
+   "b": [
+    "Mentored validation engineers in structured debugging, test planning, failure isolation, RCA and prioritization.",
+    "Established consistent validation and debug methodologies across teams.",
+    "Coordinated technical dependencies across hardware, firmware, BIOS, OS, driver and platform groups.",
+    "Supported execution tracking, technical reviews, issue triage and stakeholder communication.",
+    "Drove technical investigations through collaboration with multiple engineering teams."
+   ]
+  }
+ ],
+ "skills": [
+  {
+   "k": "Storage & High-Speed I/O",
+   "v": "PCIe Architecture, NVMe Storage Integration, Device Enumeration, Device Initialization, PCIe Link Debugging, NVMe Workflows, Storage I/O, Queue Depth, Latency, Throughput, SSD Architecture Fundamentals"
+  },
+  {
+   "k": "Product Validation",
+   "v": "Post-Silicon Validation, System-Level Product Validation, Silicon Bring-up, Functional Validation, Workload-Based Testing, Stress Testing, Stability, Reliability, Recovery Validation, Production Readiness"
+  },
+  {
+   "k": "Validation Architecture",
+   "v": "Validation Strategy, Test Planning, Coverage Modeling, Risk-Based Prioritization, Gap Analysis, Regression Planning, Exit Criteria, Validation Sign-off, Customer Use-Case Validation"
+  },
+  {
+   "k": "Firmware / OS",
+   "v": "Firmware and BIOS Integration, Linux Kernel Debugging, Device Driver Debugging, Boot and Initialization Flows, Power Management, Embedded Systems, Windows and Linux Debugging"
+  },
+  {
+   "k": "System Debugging",
+   "v": "Cross-Layer RCA, JTAG, Intel ITP, WinDbg, Trace Analysis, Oscilloscopes, Logic Analyzers, PCIe Debugging, Boot and Reset Analysis, Performance Investigation"
+  },
+  {
+   "k": "Automation",
+   "v": "Python, Regression Frameworks, Test Automation, Validation Dashboards, Failure Analytics, Observability, FastAPI, Docker, Kubernetes"
+  },
+  {
+   "k": "Technical Leadership",
+   "v": "Validation Architecture, Technical Ownership, Cross-Functional Leadership, Engineering Mentoring, Failure Triage, Technical Reviews, Risk Management, Production Readiness"
+  },
+  {
+   "k": "Tools: Debug & Validation",
+   "v": "JTAG, Intel ITP, WinDbg, Linux Kernel Debugging, Trace Analysis, Oscilloscopes, Logic Analyzers"
+  },
+  {
+   "k": "Tools: Interfaces",
+   "v": "PCIe, NVMe, USB, I2C, SPI, UART, CPU, Memory, Storage Subsystems, High-Speed I/O"
+  },
+  {
+   "k": "Tools: Programming",
+   "v": "Python, C, Linux, Windows, Firmware Debugging, Kernel Debugging, System-Level Programming"
+  },
+  {
+   "k": "Tools: Infrastructure",
+   "v": "Python Automation Frameworks, Regression Infrastructure, Test Execution Automation, Validation Dashboards, Observability, FastAPI, Docker, Kubernetes"
+  },
+  {
+   "k": "Tools: AI & Productivity",
+   "v": "LLMs, LangChain, RAG Systems, AI-Assisted Engineering Automation, Automated Reporting, Engineering Productivity Solutions"
+  }
+ ],
+ "education": [
+  {
+   "deg": "B.Tech – Engineering Technology",
+   "inst": "BITS Pilani",
+   "y": "2018 – 2022"
+  },
+  {
+   "deg": "Diploma – Electronics & Communication Engineering",
+   "inst": "Sri Ragavendra Polytechnic College",
+   "y": "2005 – 2008"
+  }
+ ],
+ "projects": [
+  {
+   "title": "AI Trading Prediction System",
+   "status": "In progress",
+   "summary": "Python system with prediction models and risk logic for market forecasting.",
+   "tags": [
+    "Python",
+    "ML",
+    "Quant"
+   ],
+   "repo": ""
+  },
+  {
+   "title": "Defect Repro with AI Agents",
+   "status": "In progress",
+   "summary": "AI agents that generate reproduction scripts from defect reports to cut debug turnaround.",
+   "tags": [
+    "LLM",
+    "Agents",
+    "Validation"
+   ],
+   "repo": ""
+  },
+  {
+   "title": "Validation RAG Assistant",
+   "status": "Upcoming",
+   "summary": "RAG over specs, logs and past RCAs to speed up failure triage.",
+   "tags": [
+    "RAG",
+    "LangChain"
+   ],
+   "repo": ""
+  }
+ ],
+ "posts": [
+  {
+   "slug": "welcome",
+   "title": "Hello, world: what this blog is for",
+   "date": "2026-11-20",
+   "summary": "Validation, PCIe/NVMe debug, and AI for engineering.",
+   "tags": [
+    "Intro"
+   ],
+   "body": "# Hello, world\n\nThis blog covers post-silicon validation, PCIe/NVMe debugging, Linux power management, and applying AI to engineering workflows.\n\nReplace this post with your first real one."
+  }
+ ]
+}
