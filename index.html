@@ -1,0 +1,120 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Sabarigirish Radhakrishnan: System &amp; Product Validation Architect. PCIe, NVMe, post-silicon validation, Linux power management, Python automation, AI-assisted engineering.">
+<meta property="og:title" content="Sabarigirish Radhakrishnan | System &amp; Product Validation Architect"><meta property="og:type" content="website">
+<title>Sabarigirish Radhakrishnan | System &amp; Product Validation Architect</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🔬</text></svg>">
+<style>
+:root{--bg:#fff;--fg:#14181f;--mut:#5b6573;--card:#f4f6f9;--line:#dde2e9;--ac:#0b6bcb}
+@media(prefers-color-scheme:dark){:root{--bg:#0e1116;--fg:#e8ecf2;--mut:#9aa5b4;--card:#171c24;--line:#262d38;--ac:#5aa9ff}}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.65 system-ui,-apple-system,Segoe UI,Roboto,sans-serif}
+a{color:var(--ac);text-decoration:none}a:hover{text-decoration:underline}
+header{position:sticky;top:0;background:var(--bg);border-bottom:1px solid var(--line);z-index:5}
+nav{max-width:900px;margin:auto;padding:12px 20px;display:flex;gap:18px;flex-wrap:wrap}nav b{margin-right:auto}
+main{max-width:900px;margin:auto;padding:0 20px 60px}section{padding:44px 0 8px}h2{font-size:1.5rem;margin:0 0 16px}
+.hero h1{font-size:2.3rem;margin:50px 0 6px;line-height:1.15}.hero p{color:var(--mut);max-width:680px}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin:10px 0}
+.chip{background:var(--card);border:1px solid var(--line);border-radius:99px;padding:2px 12px;font-size:.82rem;color:var(--mut)}
+button{font:inherit;cursor:pointer;color:var(--fg);background:var(--card);border:1px solid var(--line);border-radius:8px;padding:4px 12px;font-size:.85rem}
+button.on,button.pri{background:var(--ac);color:#fff;border-color:var(--ac)}button.del{color:#d33}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:14px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px}
+.card h3{margin:0 0 6px;font-size:1.05rem}.card p{margin:6px 0;color:var(--mut);font-size:.92rem}
+.st{font-size:.72rem;text-transform:uppercase;letter-spacing:.05em;font-weight:700}.Live{color:#1a9e55}.In-progress{color:#d98a00}.Upcoming{color:var(--mut)}
+.job{border-left:2px solid var(--line);padding:0 0 22px 18px;margin-left:6px;position:relative}
+.job:before{content:"";position:absolute;left:-6px;top:6px;width:10px;height:10px;border-radius:50%;background:var(--ac)}
+.job h3{margin:0;font-size:1.02rem}.job small{color:var(--mut)}.job ul{margin:6px 0 0;padding-left:18px;color:var(--mut);font-size:.93rem}
+.sk{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:14px}.sk h3{font-size:.95rem;margin:0 0 6px}
+#post,#adm{display:none}#post pre{background:var(--card);padding:12px;overflow:auto;border-radius:8px}#post img{max-width:100%}
+#adm{padding-top:30px}.row{display:flex;gap:6px;align-items:center;padding:8px 0;border-bottom:1px solid var(--line)}.row span{flex:1}
+label{display:block;margin:10px 0;font-size:.88rem;color:var(--mut)}
+input,select,textarea{width:100%;font:inherit;background:var(--bg);color:var(--fg);border:1px solid var(--line);border-radius:8px;padding:8px;margin-top:4px}
+#ed{border:2px solid var(--ac);border-radius:12px;padding:6px 16px 16px;margin:14px 0}
+footer{text-align:center;color:var(--mut);font-size:.85rem;padding:30px}
+</style></head><body>
+<header><nav><b id="brand"></b><a href="#about">About</a><a href="#experience">Experience</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#blog">Blog</a><a href="#contact">Contact</a></nav></header>
+<main>
+<div id="home">
+<section class="hero" id="about"><h1 id="hn"></h1><p id="hl"></p><div id="ab"></div><div class="chips" id="links"></div></section>
+<section id="experience"><h2>Experience</h2><div id="jobs"></div></section>
+<section id="contrib"><h2>Technical Contributions</h2><div class="grid" id="cg"></div></section>
+<section id="skills"><h2>Skills</h2><div class="sk" id="sk"></div></section>
+<section id="education"><h2>Education</h2><div class="grid" id="edu"></div></section>
+<section id="projects"><h2>Projects</h2><div class="chips" id="filters"></div><div class="grid" id="pgrid"></div>
+<h2 style="margin-top:32px;font-size:1.2rem">Latest on GitHub</h2><div class="grid" id="repos"></div></section>
+<section id="blog"><h2>Blog</h2><div class="grid" id="posts"></div></section>
+<section id="contact"><h2>Contact</h2><div class="chips" id="links2"></div></section>
+</div>
+<article id="post"><p><a href="#blog">← Back to blog</a></p><div id="pbody"></div></article>
+<div id="adm"></div>
+</main>
+<footer><span id="foot"></span> · <a href="#admin">Admin</a></footer>
+<script src="https://cdn.jsdelivr.net/npm/marked@12.0.2/marked.min.js"></script>
+<script>
+const $=id=>document.getElementById(id);
+const esc=s=>String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const SCH={profile:[["name","Full name"],["headline","Headline"],["about","About","area"],["gh","GitHub username"],["linkedin","LinkedIn URL"],["email","Email (optional)"],["repo","Pages repo name (blank = username.github.io)"],["resume","Resume PDF path or URL (optional)"]],
+jobs:[["r","Role"],["o","Company"],["d","Dates"],["b","Bullets, one per line","list"]],
+skills:[["k","Category"],["v","Skills"]],
+projects:[["title","Title"],["status","Status","sel"],["summary","Summary","area"],["tags","Tags, comma separated","csv"],["repo","Repo URL (optional)"]],
+posts:[["slug","Slug (letters, numbers, hyphens)"],["title","Title"],["date","Date"],["summary","Summary","area"],["tags","Tags, comma separated","csv"],["body","Markdown body","big"]]};
+SCH.education=[["deg","Degree"],["inst","Institution"],["y","Years"]];
+SCH.contributions=[["k","Area"],["b","Points, one per line","list"]];
+const ORDER=["profile","jobs","contributions","skills","education","projects","posts"];
+const LBL={profile:"Profile",jobs:"Experience",skills:"Skills",projects:"Projects",posts:"Blog posts",education:"Education",contributions:"Technical contributions"};
+let D,flt="All",ED=null,dirty=false;
+const chips=a=>(a||[]).map(t=>`<span class="chip">${esc(t)}</span>`).join("");
+function pub(){const p=D.profile;document.title=p.name+" | "+p.headline.split(":")[0];
+$("brand").textContent=p.name;$("hn").textContent=p.name;$("hl").textContent=p.headline;$("ab").innerHTML=p.about.split("\n").filter(Boolean).map(x=>`<p>${esc(x)}</p>`).join("");$("foot").textContent="© "+new Date().getFullYear()+" "+p.name;
+$("links").innerHTML=$("links2").innerHTML=[["GitHub","https://github.com/"+p.gh],["LinkedIn",p.linkedin],p.email&&["Email","mailto:"+p.email],p.resume&&["Download resume",p.resume]].filter(Boolean).map(l=>`<a class="chip" href="${esc(l[1])}" rel="noopener">${l[0]}</a>`).join("");
+$("jobs").innerHTML=D.jobs.map(j=>`<div class="job"><h3>${esc(j.r)} · ${esc(j.o)}</h3><small>${esc(j.d)}</small><ul>${j.b.map(x=>`<li>${esc(x)}</li>`).join("")}</ul></div>`).join("");
+$("cg").innerHTML=(D.contributions||[]).map(c=>`<div class="card"><h3>${esc(c.k)}</h3><ul style="margin:0;padding-left:18px;color:var(--mut);font-size:.9rem">${c.b.map(x=>`<li>${esc(x)}</li>`).join("")}</ul></div>`).join("");
+$("edu").innerHTML=(D.education||[]).map(e=>`<div class="card"><h3>${esc(e.deg)}</h3><p>${esc(e.inst)}</p><small>${esc(e.y)}</small></div>`).join("");
+$("sk").innerHTML=D.skills.map(s=>`<div class="card"><h3>${esc(s.k)}</h3><p>${esc(s.v)}</p></div>`).join("");
+const st=["All",...new Set(D.projects.map(p=>p.status))];if(!st.includes(flt))flt="All";
+$("filters").innerHTML=st.map(s=>`<button class="${s==flt?"on":""}" data-s="${esc(s)}">${esc(s)}</button>`).join("");
+$("pgrid").innerHTML=D.projects.filter(p=>flt=="All"||p.status==flt).map(p=>`<div class="card"><span class="st ${esc(p.status.replace(" ","-"))}">${esc(p.status)}</span><h3>${/^https?:/.test(p.repo)?`<a href="${esc(p.repo)}" rel="noopener">${esc(p.title)}</a>`:esc(p.title)}</h3><p>${esc(p.summary)}</p><div class="chips">${chips(p.tags)}</div></div>`).join("");
+$("posts").innerHTML=D.posts.map(p=>`<div class="card"><small>${esc(p.date)}</small><h3><a href="#post/${esc(p.slug)}">${esc(p.title)}</a></h3><p>${esc(p.summary)}</p><div class="chips">${chips(p.tags)}</div></div>`).join("")}
+$("filters").onclick=e=>{if(e.target.dataset.s){flt=e.target.dataset.s;pub()}};
+function repos(){fetch(`https://api.github.com/users/${D.profile.gh}/repos?sort=updated&per_page=30`).then(r=>{if(!r.ok)throw 0;return r.json()}).then(rs=>{
+rs=rs.filter(r=>!r.fork&&!r.archived&&r.name.toLowerCase()!=D.profile.gh.toLowerCase()+".github.io").slice(0,9);
+$("repos").innerHTML=rs.length?rs.map(r=>`<div class="card"><h3><a href="${esc(r.html_url)}" rel="noopener">${esc(r.name)}</a></h3><p>${esc(r.description||"No description yet")}</p><div class="chips">${r.language?`<span class="chip">${esc(r.language)}</span>`:""}<span class="chip">★ ${+r.stargazers_count}</span></div></div>`).join(""):"<p class=card>No public repositories yet.</p>"}).catch(()=>$("repos").innerHTML="<p class=card>Set your GitHub username in Admin > Profile to list repositories.</p>")}
+/* ---------- admin ---------- */
+const val=(f,it)=>{const v=it[f[0]];return Array.isArray(v)?v.join(f[2]=="list"?"\n":", "):(v??"")};
+function fld(f,it){const t=f[2],v=val(f,it),id="f_"+f[0];
+if(t=="sel")return `<label>${f[1]}<select id="${id}">${["Live","In progress","Upcoming"].map(s=>`<option ${s==v?"selected":""}>${s}</option>`).join("")}</select></label>`;
+if(t=="area"||t=="list"||t=="big")return `<label>${f[1]}<textarea id="${id}" rows="${t=="big"?12:t=="list"?5:3}">${esc(v)}</textarea></label>`;
+return `<label>${f[1]}<input id="${id}" value="${esc(v)}"></label>`}
+function adm(){let h=`<h2>Admin</h2><p style="color:var(--mut)">Edits stay in this browser until you press <b>Save to GitHub</b>. Use a fine-grained token limited to this one repo (Contents: read and write). It is kept for this tab only.</p>
+<label>GitHub token<input id="tok" type="password" autocomplete="off" value="${esc(sessionStorage.tok||"")}"></label>
+<div class="chips"><button class="pri" data-a="save">Save to GitHub${dirty?" •":""}</button><button data-a="dl">Download site.json</button><a class="chip" href="#home">Exit admin</a></div><p id="msg"></p>`;
+for(const c of ORDER){h+=`<h3>${LBL[c]}</h3>`;
+if(c=="profile")h+=`<div class="row"><span>${esc(D.profile.name)}</span><button data-a="edit" data-c="profile" data-i="0">Edit</button></div>`;
+else{h+=D[c].map((it,i)=>`<div class="row"><span>${esc(it.title||it.r||it.k||it.deg)}</span><button data-a="up" data-c="${c}" data-i="${i}">↑</button><button data-a="dn" data-c="${c}" data-i="${i}">↓</button><button data-a="edit" data-c="${c}" data-i="${i}">Edit</button><button class="del" data-a="del" data-c="${c}" data-i="${i}">Delete</button></div>`).join("");
+h+=`<p><button data-a="edit" data-c="${c}" data-i="-1">+ Add</button></p>`}
+if(ED&&ED.c==c)h+=`<div id="ed"><h4>${ED.i<0?"Add":"Edit"} ${LBL[c]}</h4>${SCH[c].map(f=>fld(f,c=="profile"?D.profile:ED.i<0?{}:D[c][ED.i])).join("")}<button class="pri" data-a="ok">Apply</button> <button data-a="cancel">Cancel</button></div>`}
+$("adm").innerHTML=h}
+$("adm").onclick=async e=>{const b=e.target.closest("button");if(!b)return;const a=b.dataset.a,c=b.dataset.c,i=+b.dataset.i;
+if(a=="edit"){ED={c,i};adm()}
+else if(a=="cancel"){ED=null;adm()}
+else if(a=="del"){if(confirm("Delete this item?")){D[c].splice(i,1);dirty=true;pub();adm()}}
+else if(a=="up"||a=="dn"){const j=a=="up"?i-1:i+1;if(j>=0&&j<D[c].length){[D[c][i],D[c][j]]=[D[c][j],D[c][i]];dirty=true;pub();adm()}}
+else if(a=="ok"){const it={};SCH[ED.c].forEach(f=>{let v=$("f_"+f[0]).value.trim();if(f[2]=="list")v=v.split("\n").map(s=>s.trim()).filter(Boolean);if(f[2]=="csv")v=v.split(",").map(s=>s.trim()).filter(Boolean);it[f[0]]=v});
+if(ED.c=="posts"&&!/^[\w-]+$/.test(it.slug))return alert("Slug: letters, numbers, hyphens only");
+if(ED.c=="profile")D.profile=it;else if(ED.i<0)D[ED.c].push(it);else D[ED.c][ED.i]=it;
+ED=null;dirty=true;pub();adm()}
+else if(a=="dl"){const u=URL.createObjectURL(new Blob([JSON.stringify(D,null,1)],{type:"application/json"}));const l=document.createElement("a");l.href=u;l.download="site.json";l.click()}
+else if(a=="save"){const t=$("tok").value.trim(),m=$("msg");if(!t){m.textContent="Enter a token first.";return}sessionStorage.tok=t;m.textContent="Saving…";
+try{const p=D.profile,url=`https://api.github.com/repos/${p.gh}/${p.repo||p.gh+".github.io"}/contents/data/site.json`,h={Authorization:"Bearer "+t,Accept:"application/vnd.github+json"};
+const g=await fetch(url,{headers:h});const sha=g.ok?(await g.json()).sha:undefined;
+const r=await fetch(url,{method:"PUT",headers:h,body:JSON.stringify({message:"Update site content via admin",content:btoa(unescape(encodeURIComponent(JSON.stringify(D,null,1)))),sha})});
+if(!r.ok)throw new Error((await r.json()).message);dirty=false;m.textContent="Saved. GitHub Pages republishes in about a minute.";adm()}catch(x){m.textContent="Failed: "+x.message}}};
+addEventListener("beforeunload",e=>{if(dirty){e.preventDefault();e.returnValue=""}});
+/* ---------- routing ---------- */
+function route(){if(!D)return;const h=location.hash,m=h.match(/^#post\/([\w-]+)$/),a=h=="#admin";
+$("post").style.display=m?"block":"none";$("adm").style.display=a?"block":"none";$("home").style.display=m||a?"none":"block";
+if(a)adm();if(m){const p=D.posts.find(x=>x.slug==m[1]);$("pbody").innerHTML=p?`<h1>${esc(p.title)}</h1><small>${esc(p.date)}</small>`+marked.parse(p.body||""):"<p>Post not found.</p>";scrollTo(0,0)}}
+addEventListener("hashchange",route);
+fetch("data/site.json?t="+Date.now()).then(r=>r.json()).then(d=>{D=d;pub();repos();route()}).catch(()=>document.body.insertAdjacentHTML("afterbegin","<p style='padding:20px'>Could not load data/site.json. Open via a web server or GitHub Pages, not file://.</p>"));
+</script></body></html>
